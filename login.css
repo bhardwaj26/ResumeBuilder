@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/resumeBuilder/background.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.form_container{
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: #0b0217;
+}
+
+
+.for_close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: 0b0217;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.form_container h2{
+    font-size: 22px;
+    color: #0b0217;
+    text-align: center;
+}
+.input_box{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+.input_box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    transition: all 0.2s ease;
+    border-bottom: 1.5px solid #aaaaaa;
+}
+.input_box input:focus{
+    border-color: rgb(38 62 97);
+}
+.input_box i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+.input_box i.password,
+.input_box i.email{
+    left: 0;
+    color: #707070;
+}
+.input_box input:focus ~ i.password,
+.input_box input:focus ~ i.email {
+    color: rgb(38 62 97);
+}
+.input_box i#pw_hide{
+    right: 0;
+    font-size: 18px;
+}
+.option_field{
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form_container a{
+    color: rgb(38 62 97);
+    font-size: 12px;
+
+}
+.form_container a :hover{
+    text-decoration: underline;
+}
+.checkbox{
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;    
+}
+.checkbox input{
+    accent-color:  rgb(38 62 97);
+}
+.checkbox label{
+    font-size: 12px;
+    user-select: none;
+    cursor: pointer;
+    color: #0b0217;
+}
+.form_container .button{
+    background:rgb(38 62 97);
+    color: #fff;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+.login_signup{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+}

@@ -1,0 +1,34 @@
+/*body{
+    background-color: beige;
+}*/
+/*#cv-form{
+    display: none;
+}*/
+
+#cv-template{
+    display: none;
+}
+.resume {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.my-img{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 10px;   
+    width: 175px;
+    height: 200px;
+}
+.background{
+    background-color: rgb(220, 223, 233);
+}
+.namee.background {
+    height: 60px;
+    margin-bottom: 5px;
+}
+h1#nameT2 {
+    margin-bottom: 5px;
+}
+/*.profile{
+    width: 100%;
+}*/
