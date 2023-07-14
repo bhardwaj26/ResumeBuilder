@@ -1,10 +1,14 @@
+<?php
+    include("server.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/resumeBuilder/login.css">
+    <link rel="stylesheet" href="/login/login.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <title>login page</title>
 </head>
@@ -39,7 +43,7 @@
 
                     <div class="login_signup">
                         Don't have an account? 
-                        <a href="/resumeBuilder/signup.html" id="signup">Signup</a>
+                        <a href="/login/signup.php" id="signup">Signup</a>
                     </div>
                 </form>
             </div>       
@@ -48,7 +52,7 @@
         </div>
     </section>
 
-    <script src="/resumeBuilder/login.js"></script>
+    <script src="/login/login.js"></script>
      
 </body>
 </html>

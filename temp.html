@@ -1,0 +1,31 @@
+<html>
+<div>
+    <img src="cart.png" id="imgg">
+    <input type="file" id="abc">
+</div>
+<script>
+    var inpt = document.getElementById('abc')
+    inpt.addEventListener("change", () => {
+        const selectedFile = inpt.files[0];
+        if(isFileImage(selectedFile)){
+            var reader = new FileReader()
+            reader.onload = function(e)  {
+                var imgg = document.getElementById('imgg')
+                imgg.src = e.target.result;
+                imgg.style.width = '156px';
+                imgg.style.height = 'auto';
+            }
+            reader.readAsDataURL(selectedFile)
+        }
+        else{
+            alert("Not a Image file")
+        }
+
+    });
+    function isFileImage(file) {
+        return file && file['type'].split('/')[0] === 'image';
+    }
+
+</script>
+
+</html>
